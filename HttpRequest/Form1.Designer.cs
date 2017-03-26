@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.chkAppendQuertString = new System.Windows.Forms.CheckBox();
+            this.chkSleep = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -61,18 +63,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(292, 301);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 12);
+            this.label1.Size = new System.Drawing.Size(17, 12);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Sec";
+            this.label1.Text = "秒";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(103, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 12);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Counts";
+            this.label2.Text = "次數";
             // 
             // txtCounts
             // 
@@ -97,24 +99,44 @@
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(707, 22);
             this.txtUrl.TabIndex = 6;
-            this.txtUrl.Text = "http://t17.techbang.com/topics/37501-personal-cloud-super-engine-hgst-deskstar-6t" +
-    "b";
+            this.txtUrl.Text = "http://localhost/webtest/";
             // 
             // chkAppendQuertString
             // 
             this.chkAppendQuertString.AutoSize = true;
             this.chkAppendQuertString.Location = new System.Drawing.Point(377, 83);
             this.chkAppendQuertString.Name = "chkAppendQuertString";
-            this.chkAppendQuertString.Size = new System.Drawing.Size(122, 16);
+            this.chkAppendQuertString.Size = new System.Drawing.Size(118, 16);
             this.chkAppendQuertString.TabIndex = 7;
-            this.chkAppendQuertString.Text = "Append Query string";
+            this.chkAppendQuertString.Text = "AppendQueryString";
             this.chkAppendQuertString.UseVisualStyleBackColor = true;
+            // 
+            // chkSleep
+            // 
+            this.chkSleep.AutoSize = true;
+            this.chkSleep.Location = new System.Drawing.Point(497, 83);
+            this.chkSleep.Name = "chkSleep";
+            this.chkSleep.Size = new System.Drawing.Size(114, 16);
+            this.chkSleep.TabIndex = 8;
+            this.chkSleep.Text = "每次送出休息8秒";
+            this.chkSleep.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(121, 301);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "費時";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 370);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.chkSleep);
             this.Controls.Add(this.chkAppendQuertString);
             this.Controls.Add(this.txtUrl);
             this.Controls.Add(this.label3);
@@ -140,6 +162,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUrl;
         private System.Windows.Forms.CheckBox chkAppendQuertString;
+        private System.Windows.Forms.CheckBox chkSleep;
+        private System.Windows.Forms.Label label4;
     }
 }
 
